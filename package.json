@@ -1,0 +1,19 @@
+{
+  "name": "docker-tcpdump",
+  "version": "0.0.1",
+  "description": "A docker tcpdump setup with ability to signal for dump remotely",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "tcpdump",
+    "nodejs",
+    "docker"
+  ],
+  "author": "Shaun Warman",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
