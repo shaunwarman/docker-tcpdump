@@ -5,6 +5,8 @@ A dockerized tcpdump setup that can be triggered over http
 A dockerized agent with a dynamic endpoint used to trigger a tcpdump for a certain window of time. The `.pcap` file gets dropped
 to a configurable location using a configurable time range.
 
+![](https://imgur.com/vlABP8I.gif)
+
 ## Install
 ```
 docker pull shaunw321/docker-tcpdump
