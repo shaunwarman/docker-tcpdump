@@ -17,14 +17,14 @@ app.get('/dump/:range', (req, res) => {
   
   const timerange = range || 10;
   
-  Child.exec(`tcpdump -w ${filepath} -G ${timerange} -W 1`, (error, stdout, stderr) => {
+  Child.exec(`tcpdump -w ${filepath} -G ${timerange} -W 1 -U`, (error, stdout, stderr) => {
     if (error) {
       console.log(`Error with tcpdump ${error}`);
       res.send(error);
       return;
     }
     
-    res.sendFile(filepath);
+    res.download(filepath, 'dump.pcap');
   });
 });
 
